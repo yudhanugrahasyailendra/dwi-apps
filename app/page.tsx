@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useRef } from 'react';
+import Image from 'next/image';
 
 export default function Home() {
   const [showSurprise, setShowSurprise] = useState(false);
@@ -49,9 +50,11 @@ export default function Home() {
             Kalau habis, tinggal top up lagi di minimarket terdekat 🙏🏻
           </p>
 
-          <img
+          <Image
             src="/images/Dwi.jpg"
             alt="Foto Dwi"
+            width={288}
+            height={288}
             className="mx-auto mb-6 h-64 w-64 rounded-3xl border-4 border-white object-cover shadow-xl sm:h-72 sm:w-72"
           />
 
